@@ -47,12 +47,12 @@
     "typescript": "^4.0.2"
   },
   "scripts": {
-    "start": "rollup -c rollup.config.js -w",
-    "build": "BUILD=production rollup -c rollup.config.js",
+    "start": "rollup -c -w",
+    "build": "BUILD=production rollup -c",
     "lint": "eslint",
     "test": "jest --watch",
     "coverage": "jest --coverage",
-    "prepublish": "BUILD=production rollup -c rollup.config.js && eslint && jest"
+    "prepublish": "BUILD=production rollup -c && eslint && jest"
   },
   "dependencies": {}
 }
